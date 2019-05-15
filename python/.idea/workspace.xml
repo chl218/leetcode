@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0550440e-9b57-4cfe-9691-8353cbdc33c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-easy-collection/leet_array.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/00-remove-duplicates-from-sorted-array.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/01-best-time-to-buy-and-sell-stock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/02-rotate-array.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/03-contains-duplicate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/04-single-number.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/05-intersection-of-two-arrays-ii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/06-plus-one.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/07-move-zeros.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/08-two-sum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/09-valid-sudoku.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/00-array/10-rotate-image.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/01-reverse-string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/02-reverse-integer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/03-first-unique-character-in-a-string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/04-valid-anagram.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/05-valid-palindrome.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/06-atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/07-strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/08-count-and-say.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/01-strings/09-longest-common-prefix.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/00-delete-node-in-a-linked-list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/01-remove-nth-node-from-end-of-list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/02-reverse-linked-list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/03-merge-two-sorted-lists.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/04-palindrome-linked-list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/02-linked-list/05-linked-list-cycle.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/03-trees/00-maximum-depth-of-binary-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/03-trees/01-validate-binary-search-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/03-trees/02-symmetric-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/03-trees/03-binary-tree-level-order-traversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/03-trees/04-convert-sorted-array-to-binary-search-tree.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/04-sorting-and-searching/00-merge-sorted-array.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/04-sorting-and-searching/01-first-bad-version.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/05-dynamic-programming/00-climbing-stairs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/05-dynamic-programming/01-best-time-to-buy-and-sell-stock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/05-dynamic-programming/02-maximum-subarray.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/05-dynamic-programming/03-house-robber.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/06-design/00-shuffle-an-array.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/06-design/01-min-stack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/07-math/00-fizz-buzz.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/07-math/01-count-primes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/07-math/02-power-of-three.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/07-math/03-roman-to-integer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/00-number-of-1-bits.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/01-hamming-distance.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/02-reverse-bits.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/03-pascals-triangle.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/04-valid-parentheses.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_top_interview_questions_easy_collection/08-others/05-missing-number.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/00-3sum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/01-set-matrix-zeros.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/02-group-anagrams.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/04-longest-substring-without-repeating-characters.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/05-longest-palindromic-stubstring.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/01_array_and_strings/06-increasing-triplet-subsequence.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/02_linked_list/00-add-two-numbers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/02_linked_list/01-odd-even-linked-list.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/02_linked_list/02-intersection-of-two-linked-list.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/03_trees_and_graphs/00-binary-tree-inorder-traversal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/03_trees_and_graphs/01-binary-tree-zigzag-level-order-traversal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/03_trees_and_graphs/03-populating-next-right-pointers-in-each-node.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/03_trees_and_graphs/04-kth-smallest-element-in-a-bast.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/03_trees_and_graphs/06-number-of-islands.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/04_backtracking/01_letterCombinations.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/04_backtracking/02_generateParenthesis.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/04_backtracking/03_permutation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/04_backtracking/04_subsets.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/04_backtracking/05_exist.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/01-sort-colors.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/02-top-k-frequent-elements.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/03-find-peak-element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/04-search-for-a-range.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/05-merge-intervals.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/05_sorting_and_searching/08-search-a-2d-matrix-ii.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/08-others/01-evaluate-reverse-polish-notation.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_top_interview_questions_medium_collection/08-others/02-majority-element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_top_interview_questions_hard_collection/01_array_and_strings/00_ProductExceptSelf.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_top_interview_questions_hard_collection/01_array_and_strings/01_SpiralMatrix.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_top_interview_questions_hard_collection/01_array_and_strings/02_4SumsII.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_top_interview_questions_hard_collection/01_array_and_strings/03_ContainerWithMostWater.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/09-palindrome-number.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/107-binary-tree-level-order-traversal-ii.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/110-balanced-binary-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/111-minimum-depth-of-binary-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/112-path-sum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/119-pascals-triangle-ii.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/167-two-sum-ii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/168-excel-sheet-column-title.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/169-majority-element.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/171-excel-sheet-column-number.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/172-factorial-trailing-zeros.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/200-number-of-islands.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/27-remove-element.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/35-search-insert.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/572-subtree-of-another-tree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/58-length-of-last-world.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/67-add-binary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/69-sqrt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04_category_all/83-remove-duplicates-from-sorted-list.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-easy-collection/leet_array.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/01-easy-collection/leet_array.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="389" />
+    <option name="y" value="374" />
+    <option name="width" value="1436" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="01-easy-collection" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="leet_array" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01-easy-collection" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01-easy-collection/leet_array.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.leet_array" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0550440e-9b57-4cfe-9691-8353cbdc33c4" name="Default Changelist" comment="" />
+      <created>1557885346275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557885346275</updated>
+      <workItem from="1557885348135" duration="2269000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2269000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="34" width="1871" height="1046" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12054794" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Python Console" visible="true" weight="0.2934066" />
+      <window_info anchor="bottom" id="Terminal" weight="0.39969134" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3287037" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32967034" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python$leet_array.coverage" NAME="leet_array Coverage Results" MODIFIED="1557885901288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-easy-collection" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/01-easy-collection/leet_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
