@@ -9,13 +9,8 @@ def remove_duplicates(nums: List[int]) -> int:
 
     Do not allocate extra space for another array, you must do this by modifying
     the input array in-place with O(1) extra memory.
-
-    :param
-        Sorted array with duplicates
-    :return
-        New length of sorted array
-
     """
+
     if not nums:
         return 0
 
@@ -40,11 +35,6 @@ def max_profit(prices: List[int]) -> int:
 
     Note: You may not engage in multiple transactions at the same time (i.e.,
     you must sell the stock before you buy again).
-
-    :param
-        List of prices
-    :return:
-        Maximum profit
     """
 
     # Peak-Vally Approach
@@ -64,10 +54,6 @@ def rotate(nums: List[int], k: int) -> None:
     non-negative.
 
     Python slicing approach
-
-    :param nums: int list
-    :param k: k-steps
-    :return:
     """
 
     k = k % len(nums)
@@ -89,14 +75,25 @@ def rotate2(nums: List[int], k: int) -> None:
         Reverse A to get ArB, where Ar is reverse of A.
         Reverse B to get ArBr, where Br is reverse of B.
         Reverse all to get (ArBr) r = BA.
-
-    :param nums: int list
-    :param k: k-steps
-    :return:
     """
 
     k = k % len(nums)
-
     nums.reverse()
     nums[:k+1] = nums[k::-1]
     nums[k:] = nums[:k:-1]
+
+
+def contains_duplicate(nums: List[int]) -> bool:
+    """Contains Duplicate
+
+    Given an array of integers, find if the array contains any duplicates.
+
+    Your function should return true if any value appears at least twice in the
+    array, and it should return false if every element is distinct.
+    """
+
+    unique = set(nums)
+    if len(nums) == len(unique):
+        return False
+    return True
+
