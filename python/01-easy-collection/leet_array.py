@@ -55,3 +55,22 @@ def max_profit(prices: List[int]) -> int:
             profit += prices[i+1] - prices[i]
 
     return profit
+
+
+def rotate(nums: List[int], k: int) -> None:
+    """Rotate Array
+
+    Given an array, rotate the array to the right by k steps, where k is
+    non-negative.
+
+    :param nums: int list
+    :param k: k-steps
+    :return:
+    """
+
+    k = k % len(nums)
+    nums[:] = nums[-k:] + nums[:-k]     # nums[:] - modify in-place
+
+
+
+
