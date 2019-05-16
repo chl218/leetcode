@@ -63,6 +63,8 @@ def rotate(nums: List[int], k: int) -> None:
     Given an array, rotate the array to the right by k steps, where k is
     non-negative.
 
+    Python slicing approach
+
     :param nums: int list
     :param k: k-steps
     :return:
@@ -72,5 +74,29 @@ def rotate(nums: List[int], k: int) -> None:
     nums[:] = nums[-k:] + nums[:-k]     # nums[:] - modify in-place
 
 
+def rotate2(nums: List[int], k: int) -> None:
+    """Rotate Array
+
+    Given an array, rotate the array to the right by k steps, where k is
+    non-negative.
+
+    Algorithm approach: Reversal Algorithm (right rotation):
 
 
+        Let AB are the two parts of the input array where A = arr[0..d-1] and
+        B = arr[d..n-1]. The idea of the algorithm is :
+
+        Reverse A to get ArB, where Ar is reverse of A.
+        Reverse B to get ArBr, where Br is reverse of B.
+        Reverse all to get (ArBr) r = BA.
+
+    :param nums: int list
+    :param k: k-steps
+    :return:
+    """
+
+    k = k % len(nums)
+
+    nums.reverse()
+    nums[:k+1] = nums[k::-1]
+    nums[k:] = nums[:k:-1]
