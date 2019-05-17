@@ -97,3 +97,22 @@ def contains_duplicate(nums: List[int]) -> bool:
         return False
     return True
 
+
+def single_umber(nums: List[int]) -> int:
+    """Single Number
+
+    Given a non-empty array of integers, every element appears twice except for
+     one. Find that single one.
+
+    Note: Your algorithm should have a linear runtime complexity. Could you
+    implement it without using extra memory?
+    """
+
+    # n xor 0 = n
+    # n xor n = 0
+
+    unique = 0
+    for n in nums:
+        unique ^= n
+
+    return unique
