@@ -149,6 +149,7 @@ def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
 
 def plus_one(digits: List[int]) -> List[int]:
     """Plus One
+
     Given a non-empty array of digits representing a non-negative integer, plus
     one to the integer.
 
@@ -158,6 +159,7 @@ def plus_one(digits: List[int]) -> List[int]:
     You may assume the integer does not contain any leading zero, except the
     number 0 itself.
     """
+
     carry = 1
     for i in range(len(digits) - 1, -1, -1):
         sum = digits[i] + carry
@@ -168,3 +170,26 @@ def plus_one(digits: List[int]) -> List[int]:
         digits = [carry] + digits
 
     return digits
+
+
+def move_zeroes(nums: List[int]) -> None:
+    """Move Zeros
+
+    Given an array nums, write a function to move all 0's to the end of it
+    while maintaining the relative order of the non-zero elements.
+
+    Do not return anything, modify nums in-place instead.
+    """
+
+    num_zeros = 0
+
+    i = 0
+    for n in nums:
+        if n != 0:
+            nums[i] = n
+            i += 1
+        else:
+            num_zeros += 1
+
+    nums[len(nums) - num_zeros:] = [0] * num_zeros
+
