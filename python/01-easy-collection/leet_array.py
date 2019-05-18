@@ -116,3 +116,55 @@ def single_umber(nums: List[int]) -> int:
         unique ^= n
 
     return unique
+
+
+def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
+    """Intersection of Two Arrays II
+
+    Given two arrays, write a function to compute their intersection.
+
+    Note:
+        - Each element in the result should appear as many times as it shows in
+          both arrays.
+        - The result can be in any order.
+    """
+
+    nums1.sort()
+    nums2.sort()
+
+    res = []
+    i = 0
+    j = 0
+
+    while i < len(nums1) and j < len(nums2):
+        if nums1[i] == nums2[j]:
+            res.append((nums1[i]))
+        elif nums1[i] > nums2[j]:
+            j += 1
+        else:   # nums1[i] < nums2[j]:
+            i += 1
+
+    return res
+
+
+def plus_one(digits: List[int]) -> List[int]:
+    """Plus One
+    Given a non-empty array of digits representing a non-negative integer, plus
+    one to the integer.
+
+    The digits are stored such that the most significant digit is at the head of
+     the list, and each element in the array contain a single digit.
+
+    You may assume the integer does not contain any leading zero, except the
+    number 0 itself.
+    """
+    carry = 1
+    for i in range(len(digits) - 1, -1, -1):
+        sum = digits[i] + carry
+        carry = sum // 10   # // - integer division
+        digits[i] = sum % 10
+
+    if carry > 0:
+        digits = [carry] + digits
+
+    return digits
