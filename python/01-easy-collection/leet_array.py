@@ -193,3 +193,21 @@ def move_zeroes(nums: List[int]) -> None:
 
     nums[len(nums) - num_zeros:] = [0] * num_zeros
 
+
+def two_sum(nums: List[int], target: int) -> List[int]:
+    """Two Sum
+
+    Given an array of integers, return indices of the two numbers such that they
+    add up to a specific target.
+
+    You may assume that each input would have exactly one solution, and you may
+    not use the same element twice.
+    """
+    dict = {}
+
+    for i in range(len(nums)):
+        if (target - nums[i]) in dict:
+            return [dict[target - nums[i]], i]
+        else:
+            dict[nums[i]] = i
+
