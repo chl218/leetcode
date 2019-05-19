@@ -203,11 +203,71 @@ def two_sum(nums: List[int], target: int) -> List[int]:
     You may assume that each input would have exactly one solution, and you may
     not use the same element twice.
     """
-    dict = {}
 
+    dict = {}
     for i in range(len(nums)):
         if (target - nums[i]) in dict:
             return [dict[target - nums[i]], i]
         else:
             dict[nums[i]] = i
+
+
+
+
+def is_valid_sudoku(board: List[List[str]]) -> bool:
+    """Validate Sudoku
+
+    Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be
+    validated according to the following rules:
+
+        - Each row must contain the digits 1-9 without repetition.
+        - Each column must contain the digits 1-9 without repetition.
+        - Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9
+          without repetition.
+
+    Note:
+
+        - A Sudoku board (partially filled) could be valid but is not
+          necessarily solvable.
+        - Only the filled cells need to be validated according to the mentioned
+          rules.
+        - The given board contain only digits 1-9 and the character '.'.
+        - The given board size is always 9x9.
+    """
+
+    def validate(_set, _item):
+        if _item == '.':
+            return True
+
+        if _item in _set:
+            print(_item)
+            return False
+
+        _set.add(_item)
+        return True
+
+    # validate row
+    for row in board:
+        _set = set()
+        for item in row:
+            if not validate(_set, item):
+                return False
+
+    # validate col
+    for col in range(0, 9):
+        _set = set()
+        for row in range(0, 9):
+            if not validate(_set, board[row][col]):
+                return False
+
+    # validate block
+    for rblock in range(0, 9, 3):
+        for cblock in range(0, 9, 3):
+            _set = set()
+            for row in range(rblock, rblock+3):
+                for col in range(cblock, cblock+3):
+                    if not validate(_set, board[row][col]):
+                        return False
+
+    return True
 
