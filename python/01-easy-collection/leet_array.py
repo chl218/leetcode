@@ -271,3 +271,32 @@ def is_valid_sudoku(board: List[List[str]]) -> bool:
 
     return True
 
+
+def rotate90cw(matrix: List[List[int]]) -> None:
+    """ Rotate Image
+
+    You are given an n x n 2D matrix representing an image.
+
+    Rotate the image by 90 degrees (clockwise).
+
+    Note:
+    You have to rotate the image in-place, which means you have to modify the
+    input 2D matrix directly. DO NOT allocate another 2D matrix and do the
+    rotation.
+
+    Do not return anything, modify matrix in-place instead.
+    """
+
+    n = len(matrix)
+
+    # transpose
+    for r in range(0, n):
+        for c in range(r, n):
+            if r == c:
+                continue
+
+            matrix[r][c], matrix[c][r] = matrix[c][r], matrix[r][c]
+
+    # row reverse
+    for row in matrix:
+        row.reverse()
