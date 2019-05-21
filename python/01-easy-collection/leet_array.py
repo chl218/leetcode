@@ -212,8 +212,6 @@ def two_sum(nums: List[int], target: int) -> List[int]:
             dict[nums[i]] = i
 
 
-
-
 def is_valid_sudoku(board: List[List[str]]) -> bool:
     """Validate Sudoku
 
