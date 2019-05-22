@@ -21,10 +21,10 @@ def reverse_integer(x: int) -> int:
     Given a 32-bit signed integer, reverse digits of an integer.
 
     Note:
-    Assume we are dealing with an environment which could only store integers
-    within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose
-    of this problem, assume that your function returns 0 when the reversed
-    integer overflows.
+        Assume we are dealing with an environment which could only store
+        integers within the 32-bit signed integer range: [−231,  231 − 1]. For
+        the purpose of this problem, assume that your function returns 0 when
+        the reversed integer overflows.
     """
 
     sign = 1
@@ -45,3 +45,26 @@ def reverse_integer(x: int) -> int:
         return 0
 
     return res
+
+
+def first_unique_char(s: str) -> int:
+    """First Unique Character in a String
+
+    Given a string, find the first non-repeating character in it and return it's
+    index. If it doesn't exist, return -1.
+
+    Note:
+        You may assume the string contain only lowercase letters.
+    """
+    unique = {}
+    for c in s:
+        if c not in unique:
+            unique[c] = True
+        else:
+            unique[c] = False
+
+    for idx, ch in enumerate(s):
+        if unique[ch]:
+            return idx
+
+    return -1
