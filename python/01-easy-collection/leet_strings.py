@@ -117,3 +117,35 @@ def is_anagram(s: str, t: str) -> bool:
             return False
 
     return True
+
+
+def is_palindrome(s: str) -> bool:
+    """Valid Palindrome
+
+    Given a string, determine if it is a palindrome, considering only
+    alphanumeric characters and ignoring cases.
+
+    Note:
+        For the purpose of this problem, we define empty string as valid
+        palindrome.
+    """
+    s = s.lower()
+
+    i = 0
+    j = len(s) - 1
+
+    while i < j:
+
+        if s[i] != s[j]:
+            if s[i].isalnum() and s[j].isalnum():
+                return False
+
+            if not s[i].isalnum():
+                i += 1
+            if not s[j].isalnum():
+                j -= 1
+        else:
+            i += 1
+            j -= 1
+
+    return True
