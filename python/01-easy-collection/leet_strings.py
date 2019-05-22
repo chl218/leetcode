@@ -1,4 +1,5 @@
 from typing import List
+from collections import Counter
 
 
 def reverse_string(s: List[str]) -> None:
@@ -22,7 +23,7 @@ def reverse_integer(x: int) -> int:
 
     Note:
         Assume we are dealing with an environment which could only store
-        integers within the 32-bit signed integer range: [−231,  231 − 1]. For
+        integers within the 32-bit signed integer range: [−2^31,  2^31 − 1]. For
         the purpose of this problem, assume that your function returns 0 when
         the reversed integer overflows.
     """
@@ -38,7 +39,7 @@ def reverse_integer(x: int) -> int:
         n += x % 10
         x = x // 10
 
-    res = sign*n
+    res = sign * n
     if res < 0 and res < -2147483648:
         return 0
     if res > 0 and res > 2147483647:
@@ -68,3 +69,51 @@ def first_unique_char(s: str) -> int:
             return idx
 
     return -1
+
+
+def is_anagram(s: str, t: str) -> bool:
+    """Valid Anagram
+
+    Given two strings s and t , write a function to determine if t is an anagram
+    of s.
+
+    Note:
+        You may assume the string contains only lowercase alphabets.
+
+    Follow up:
+        What if the inputs contain unicode characters? How would you adapt your
+        solution to such case?
+    """
+
+    ##########
+    # SLOW
+    ##########
+    # hash = {}
+    # for ch in s:
+    #     if ch not in hash:
+    #         hash[ch] = 1
+    #     else:
+    #         hash[ch] += 1
+    #
+    # for ch in t:
+    #     if ch not in hash or hash[ch] == 0:
+    #         return False
+    #     else:
+    #         hash[ch] -= 1
+    #
+    # return sum(hash.values()) == 0
+
+    if len(s) != len(t):
+        return False
+
+    s_dict = Counter(s)
+    t_dict = Counter(t)
+
+    for key in s_dict.keys():
+        if key not in t_dict:
+            return False
+
+        if s_dict[key] != t_dict[key]:
+            return False
+
+    return True
