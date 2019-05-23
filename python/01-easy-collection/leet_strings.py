@@ -216,3 +216,23 @@ def my_atoi(s: str) -> int:
 
     return n
 
+
+def str_str(haystack: str, needle: str) -> int:
+    """Implement strStr()
+
+    Return the index of the first occurrence of needle in haystack, or -1 if
+    needle is not part of haystack.
+
+    For the purpose of this problem, we will return 0 when needle is an empty
+    string. This is consistent to C's strstr() and Java's indexOf().
+    """
+
+    if haystack == needle:
+        return 0
+
+    for i in range(len(haystack) - len(needle) + 1):
+        if haystack[i:i+len(needle)] == needle:
+            return i
+
+    return -1
+
