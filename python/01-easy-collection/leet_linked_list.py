@@ -6,7 +6,7 @@
 #         self.next = None
 
 
-def delete_node(self, node):
+def delete_node(node):
     """ Delete Node in a Linked List
     Write a function to delete a node (except the tail) in a singly linked list,
     given only access to that node.
@@ -22,10 +22,10 @@ def delete_node(self, node):
     :rtype: void Do not return anything, modify node in-place instead.
     """
 
-    deleteNode = node.next
+    old_node = node.next
 
-    node.next = deleteNode.next
-    node.val = deleteNode.val
+    node.next = to_be_deleted.next
+    node.val = to_be_deleted.val
 
-    deleteNode.Next = None
+    to_be_deleted.Next = None
 
