@@ -231,11 +231,10 @@ def str_str(haystack: str, needle: str) -> int:
         return 0
 
     for i in range(len(haystack) - len(needle) + 1):
-        if haystack[i:i+len(needle)] == needle:
+        if haystack[i:i + len(needle)] == needle:
             return i
 
     return -1
-
 
 
 def count_and_say(n: int) -> str:
@@ -260,7 +259,6 @@ def count_and_say(n: int) -> str:
     Note: Each term of the sequence of integers will be represented as a string.
     """
 
-
     def say(s):
         res = ""
 
@@ -277,7 +275,6 @@ def count_and_say(n: int) -> str:
 
         return res
 
-
     if n == 1:
         return '1'
 
@@ -286,3 +283,26 @@ def count_and_say(n: int) -> str:
         res = say(res)
     return res
 
+
+def longest_common_prefix(strs: List[str]) -> str:
+    if len(strs) == 0:
+        return ""
+
+    maxlen = len(strs[0])
+    prefix = strs[0]
+
+    for word in strs[1:]:
+
+        plen = 0
+        for c1, c2 in zip(prefix, word):
+            if c1 != c2:
+                break
+
+            plen += 1
+            if plen > maxlen:
+                break
+
+        if plen < maxlen:
+            maxlen = plen
+
+    return prefix[:maxlen]
