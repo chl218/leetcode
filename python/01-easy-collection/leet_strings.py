@@ -288,21 +288,15 @@ def longest_common_prefix(strs: List[str]) -> str:
     if len(strs) == 0:
         return ""
 
-    maxlen = len(strs[0])
     prefix = strs[0]
-
     for word in strs[1:]:
-
-        plen = 0
-        for c1, c2 in zip(prefix, word):
-            if c1 != c2:
+        oldprefix = prefix
+        for i in range(min(len(prefix), len(word))):
+            if prefix[i] != word[i]:
+                prefix = prefix[:i]
                 break
 
-            plen += 1
-            if plen > maxlen:
-                break
+        if prefix == oldprefix and len(word) < len(prefix):
+            prefix = word
 
-        if plen < maxlen:
-            maxlen = plen
-
-    return prefix[:maxlen]
+    return prefix
