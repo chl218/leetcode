@@ -285,6 +285,15 @@ def count_and_say(n: int) -> str:
 
 
 def longest_common_prefix(strs: List[str]) -> str:
+    """Longest Common Prefix
+
+    Write a function to find the longest common prefix string amongst an array
+    of strings.
+
+    If there is no common prefix, return an empty string "".
+
+    Note: All given inputs are in lowercase letters a-z.
+    """
     if len(strs) == 0:
         return ""
 
