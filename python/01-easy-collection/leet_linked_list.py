@@ -1,7 +1,7 @@
-
 class ListNode:
     """ Definition for singly-linked list
     """
+
     def __init__(self, x):
         self.val = x
         self.next = None
@@ -46,7 +46,7 @@ def removeNthFromEnd(head: ListNode, n: int) -> ListNode:
     t = None
     p = head
     q = head
-    for i in range(n-1):
+    for i in range(n - 1):
         q = q.next
 
     while q.next is not None:
@@ -74,3 +74,35 @@ def reverseList(head: ListNode) -> ListNode:
         curr.next = prev
         prev = curr
     return prev
+
+
+def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
+    """Merge Two Sorted Lists
+
+    Merge two sorted linked lists and return it as a new list. The new list
+    should be made by splicing together the nodes of the first two lists.
+    """
+
+    if not l1:
+        return l2
+    if not l2:
+        return l1
+
+    head = l3 = ListNode(0)
+
+    while l1 is not None and l2 is not None:
+        if l1.val < l2.val:
+            l3.next = l1
+            l1 = l1.next
+        else:
+            l3.next = l2
+            l2 = l2.next
+
+        l3 = l3.next
+
+    if l1 is not None:
+        l3.next = l1
+    if l2 is not None:
+        l3.next = l2
+
+    return head.next
