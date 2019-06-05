@@ -121,3 +121,19 @@ def isPalindrome(head: ListNode) -> bool:
 
     return lst == lst[::-1]
 
+
+def hasCycle(head):
+    """Linked List Cycle
+
+    Given a linked list, determine if it has a cycle in it.
+    """
+
+    p = q = head
+    while p is not None and p.next is not None:
+        p = p.next.next
+        q = q.next
+
+        if p == q:
+            return True
+
+    return False
