@@ -106,3 +106,18 @@ def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
         l3.next = l2
 
     return head.next
+
+
+def isPalindrome(head: ListNode) -> bool:
+    """Palindrome Linked List
+
+    Given a singly linked list, determine if it is a palindrome.
+    """
+
+    lst = []
+    while head is not None:
+        lst.append(head.val)
+        head = head.next
+
+    return lst == lst[::-1]
+
