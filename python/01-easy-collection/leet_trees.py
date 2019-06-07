@@ -49,3 +49,27 @@ def isValidBST(root: TreeNode) -> bool:
                isValid(root.right, root, maxNode)
 
     return isValid(root, None, None)
+
+
+ def isSymmetric(root: TreeNode) -> bool:
+    """Symmetric Tree
+     
+    Given a binary tree, check whether it is a mirror of itself (ie, symmetric
+    around its center).
+    """
+    def aux(leftNode, rightNode):
+        if not leftNode and not rightNode:
+            return True
+
+        if leftNode and rightNode and leftNode.val != rightNode.val or \
+            not leftNode and rightNode or \
+            not rightNode and leftNode:
+            return False
+
+        return aux(leftNode.left, rightNode.right) and\
+               aux(leftNode.right, rightNode.left)
+
+    if not root:
+        return True
+
+    return aux(root.left, root.right)
