@@ -73,3 +73,31 @@ def isValidBST(root: TreeNode) -> bool:
         return True
 
     return aux(root.left, root.right)
+
+
+def levelOrder(self, root: TreeNode) -> List[List[int]]:
+    """Binary Tree Level Order Traversal
+
+    Given a binary tree, return the level order traversal of its nodes' values.
+    (ie, from left to right, level by level).
+    """
+
+    if not root:
+        return []
+
+    queue = [root]
+    res = []
+    while queue:
+        nextQueue = []
+        level = []
+        for node in queue:
+            level.append(node.val)
+            if node.left:
+                nextQueue.append(node.left)
+            if node.right:
+                nextQueue.append(node.right)
+
+        res.append(level)
+        queue = nextQueue
+
+    return res
