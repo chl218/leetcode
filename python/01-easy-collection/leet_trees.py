@@ -1,3 +1,6 @@
+from typing import List
+
+
 class TreeNode(object):
     def __init__(self, x):
         self.val = x
@@ -75,7 +78,7 @@ def isValidBST(root: TreeNode) -> bool:
     return aux(root.left, root.right)
 
 
-def levelOrder(self, root: TreeNode) -> List[List[int]]:
+def levelOrder(root: TreeNode) -> List[List[int]]:
     """Binary Tree Level Order Traversal
 
     Given a binary tree, return the level order traversal of its nodes' values.
@@ -101,3 +104,30 @@ def levelOrder(self, root: TreeNode) -> List[List[int]]:
         queue = nextQueue
 
     return res
+
+
+def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
+    """Convert Sorted Array to Binary Search Tree
+
+    Given an array where elements are sorted in ascending order, convert it to a
+    height balanced BST.
+
+    For this problem, a height-balanced binary tree is defined as a binary tree
+    in which the depth of the two subtrees of every node never differ by more
+    than 1.
+    """
+
+    if not nums:
+        return None
+
+    mid = len(nums)//2
+
+    lo = nums[:mid]
+    hi = nums[mid+1:]
+
+    node       = TreeNode(nums[mid])
+    node.left  = self.sortedArrayToBST(lo)
+    node.right = self.sortedArrayToBST(hi)
+
+    return node
+
