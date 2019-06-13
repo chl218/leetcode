@@ -10,6 +10,14 @@ def climbStairs(n: int) -> int:
 
     Note: Given n will be a positive integer.
     """
+
+    # Better implementation
+    #
+    # d = {1: 1, 2: 2}
+    #     for i in range(3, n+1, 1):
+    #         d[i] = d[i-1] + d[i-2]
+    #     return d[n]
+
     dict = {1: 1}
 
     def count(i):
