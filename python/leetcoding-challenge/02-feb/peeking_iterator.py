@@ -40,35 +40,35 @@ class PeekingIterator:
         :type iterator: Iterator
         """
         self.items = iterator
-        self.cached_has_next = iterator.hasNext()
-        self.cached_value = iterator.next()
+        self.cachedHasNext = iterator.hasNext()
+        self.cachedValue = iterator.next()
 
     def peek(self):
         """
         Returns the next element in the iteration without advancing the iterator.
         :rtype: int
         """
-        if self.cached_has_next:
-            return self.cached_value
+        if self.cachedHasNext:
+            return self.cachedValue
 
     def next(self):
         """
         :rtype: int
         """
-        temp = self.cached_value
+        temp = self.cachedValue
         if self.items.hasNext():
-            self.cached_has_next = self.items.hasNext()
-            self.cached_value = self.items.next()
+            self.cachedHasNext = self.items.hasNext()
+            self.cachedValue = self.items.next()
         else:
-            self.cached_has_next = False
-            self.cached_value = None
+            self.cachedHasNext = False
+            self.cachedValue = None
         return temp
 
     def hasNext(self):
         """
         :rtype: bool
         """
-        return self.cached_has_next
+        return self.cachedHasNext
 
 
 # Your PeekingIterator object will be instantiated and called as such:

@@ -28,16 +28,16 @@
 class Solution:
     def convertBST(self, root: TreeNode) -> TreeNode:
 
-      self.val = 0
+        self.val = 0
 
-      def traverse(root: TreeNode):
-         if root:
-            traverse(root.right)
+        def traverse(root: TreeNode):
+            if root:
+                traverse(root.right)
 
-            root.val += self.val
-            self.val = root.val
+                root.val += self.val
+                self.val = root.val
 
-            traverse(root.left)
+                traverse(root.left)
 
-      traverse(root)
-      return root
+        traverse(root)
+        return root
