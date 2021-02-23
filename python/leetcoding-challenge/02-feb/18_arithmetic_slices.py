@@ -61,3 +61,21 @@ class Solution:
             seq_len -= 1
 
         return sub_soln_cnt + seq_cnt
+
+
+class Solution:
+    def numberOfArithmeticSlices(self, A: List[int]) -> int:
+        if len(A) < 3:
+            return 0
+        res = 0
+        for i in range(len(A)-2):
+            diff = A[i+1] - A[i]
+            k = i + 2
+            while k < len(A):
+                if A[k] - A[k-1] == diff:
+                    # print(A[i], A[i+1], A[k-1], A[k])
+                    res += 1
+                    k += 1
+                else:
+                    break
+        return res
