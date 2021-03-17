@@ -48,3 +48,30 @@ class Solution:
             hold = max(hold, prevCash - prices[i])
 
         return cash
+
+
+"""
+The following concepts may help:
+cash = profit, should always be positive
+hold = balance, can be negative or positive.
+on i-th day,
+
+    If you do not have a share, your profit is the same as previous day's profit.
+    If you hold a share already, you can always get more money when you sell (the prices[i]). But can you earn profit? it depends the balance, so profit = balance + prices[i] - fee when you sell a share on i-th day.
+    So on i-th day, max profit = max (profit, balance + prices[i] - fee) (not sell or sell)
+
+now, we need to know how to calculate balance.
+on i-th day
+
+    If you already have a share, you cannot buy another share, the balance is the same as previous day's balance.
+    If you have no share, so you must have profit (may be 0) and we can use profit to buy a share at cost of prices[i]. After buying a share, balance = profit - prices[i]
+    So on i-th day, max balance = max(balance, profit - prices[i]. We need maximize balance since we can get more profit when we sell a share.
+
+Note:
+
+    On a specific day, you either hold a share or not. When you hold a share, we talk about balance. Since you haven't sell you share, we cannot talk about profit.
+    When you have no share, you must have profit (cash) since you have sold your share.
+    Why we need calculate profit and balance both each day? Because we don't know the status of each day. To get max profit, we need take account of both situation for each day.
+    On day one, profit=0 since we have no share to sell. balance = -prices[0] since we need buy a share and we only talk about balance when we have a share.
+    In the loop, since we calculate profit based on previous balance, so we need calculate today's profit first, then update the balance of today.
+"""
