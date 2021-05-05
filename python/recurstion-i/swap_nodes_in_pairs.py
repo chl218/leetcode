@@ -49,3 +49,22 @@ class Solution:
             p = p.next
 
         return head
+
+
+class Solution:
+    def swapPairs(self, head: ListNode) -> ListNode:
+        
+        def recur(head): 
+            if not head or not head.next: 
+                return head 
+
+
+            p1 = head 
+            p2 = head.next 
+            
+            p1.next = recur(p2.next)
+            p2.next = p1 
+
+            return p2 
+        
+        return recur(head)
