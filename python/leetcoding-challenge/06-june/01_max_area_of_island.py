@@ -46,8 +46,6 @@ class Solution:
 
         def dfs(i: int, j: int) -> int:
 
-            # print(i, j)
-
             if i < 0 or i >= m or j < 0 or j >= n:
                 return 0
 
