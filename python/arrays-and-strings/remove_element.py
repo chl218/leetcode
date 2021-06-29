@@ -39,19 +39,27 @@ Constraints:
 
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        
+
         n = len(nums)
         i = 0
         j = n - 1
-    
+
         while i <= j:
-            
+
             if nums[i] == val:
                 nums[i], nums[j] = nums[j], nums[i]
                 j -= 1
                 n -= 1
             else:
                 i += 1
-                
-                
+
         return n
+
+
+# def removeElement(self, nums: List[int], val: int) -> int:
+#     slow=0
+#     for i in range(len(nums)):
+#         if nums[i]!=val:
+#             nums[slow]=nums[i]
+#             slow+=1
+#     return slow
