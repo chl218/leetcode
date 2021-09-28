@@ -47,3 +47,39 @@ Constraints:
     board[i][j] is a digit 1-9 or '.'.
 
 """
+
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+
+        def isUnique(r, c) -> bool:
+            if board[r][c] == '.':
+                return True
+            if board[r][c] in unique:
+                return False
+            unique.add(board[r][c])
+            return True
+
+        blocks = [[0, 3, 0, 3], [0, 3, 3, 6], [0, 3, 6, 9],
+                  [3, 6, 0, 3], [3, 6, 3, 6], [3, 6, 6, 9],
+                  [6, 9, 0, 3], [6, 9, 3, 6], [6, 9, 6, 9]]
+
+        for b in blocks:
+            unique = set()
+            for r in range(b[0], b[1]):
+                for c in range(b[2], b[3]):
+                    if not isUnique(r, c):
+                        return False
+
+        for c in range(0, 9):
+            unique = set()
+            for r in range(0, 9):
+                if not isUnique(r, c):
+                    return False
+
+        for r in range(0, 9):
+            unique = set()
+            for c in range(0, 9):
+                if not isUnique(r, c):
+                    return False
+
+        return True
