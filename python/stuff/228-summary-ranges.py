@@ -41,10 +41,8 @@ Constraints:
 
 from typing import List
 
-
 class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
-
 
         result = []
         i = 0
@@ -53,11 +51,10 @@ class Solution:
         while i < n:
 
             a = nums[i]
-            t = a
-            while i+1 < n and (t + 1) == nums[i+1]:
-                t += 1
+            b = a
+            while i+1 < n and (b + 1) == nums[i+1]:
+                b += 1
                 i += 1
-            b = t
 
             if a != b:
                 result.append(str(a) + "->" + str(b))
