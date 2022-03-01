@@ -34,8 +34,7 @@ Follow up:
     Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
 """
 
-from typing import List
-
+from ast import List
 
 class Solution:
     def countBits(self, n: int) -> List[int]:
