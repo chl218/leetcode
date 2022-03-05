@@ -62,9 +62,6 @@ class Solution:
 
 
 
-
-
-
 # class Solution:
 #     def numberOfArithmeticSlices(self, nums: List[int]) -> int:
 #         cons = 0
