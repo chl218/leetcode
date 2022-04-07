@@ -67,6 +67,5 @@ class Solution:
 #             i += 1
 #             j -= 1
 #         return True
-
 #     def _isPalindrome(self, s):
 #         return s == s[::-1]
