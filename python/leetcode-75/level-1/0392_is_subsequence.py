@@ -44,7 +44,6 @@ class Solution:
 
         minIdx = -1
         for ss in s:
-
             if ss in tmap:
                 matched = False
                 for idx in tmap[ss]:
@@ -52,10 +51,8 @@ class Solution:
                         minIdx = idx
                         matched = True
                         break
-
                 if not matched:
                     return False
-
             else:
                 return False
 
