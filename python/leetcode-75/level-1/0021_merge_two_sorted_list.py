@@ -105,3 +105,4 @@ class Solution:
                 tail.next = list2
 
         return head
+
