@@ -32,8 +32,8 @@ Output: 0
 
 
 Constraints:
-   1 <= nums.length, k <= 105
-   -104 <= nums[i] <= 104
+   1 <= nums.length, k <= 10^5
+   -10^4 <= nums[i] <= 10^4
 
 Hide Hint #1
    Let dp[i] be "the maximum score to reach the end starting at index i". The
@@ -44,6 +44,7 @@ Hide Hint #2
    values in a heap and calculate dp[i] from right to left. When the smallest
    value in the heap is out of bounds of the current index, remove it and keep
    checking.
+   
 """
 
 
