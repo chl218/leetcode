@@ -47,6 +47,8 @@ Constraints:
 Follow up: Can you come up with an algorithm that runs in O(m + n) time?
 """
 
+from typing import List
+
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """

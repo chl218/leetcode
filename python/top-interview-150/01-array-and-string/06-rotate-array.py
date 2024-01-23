@@ -35,6 +35,7 @@ Follow up:
     Could you do it in-place with O(1) extra space?
 """
 
+from typing import List
 
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
